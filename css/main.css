@@ -13,19 +13,96 @@ body {
     background-color: black;
 }
 
+/* HEADER */
+
+#header {
+    height: 50px;
+    background-color: lightblue;
+}
+
+#header input{
+    width: 30%;
+    height: 51px;
+    margin-left: 200px;
+    padding: 2px 45px;
+    background-color: black;
+    font-weight: bold;
+    border: none;
+    color: white;
+    font-size: 2em;
+    clip-path: polygon(
+        5% 0,
+        95% 0,
+        100% 100%,
+        0 100%
+    )
+}
+
+#header input:focus {
+    outline: none;
+}
+
+/* BODY */
+
+#container {
+    width: 100%;
+    padding: 20px 100px;
+}
+
+/* Legend */
+
+#legend-container {
+    float: right;
+    width: 25%;
+    height: 100%;
+}
+
+h2 {
+    color: white;
+    font-family: "PercentFont";
+    font-size: 2em;
+    margin-bottom: 15px;
+}
+
+#legend-box {
+    display: grid;
+    grid-template-columns: 72px auto;
+    
+    background-color: transparent;
+    text-align: center;
+}
+
+#legend-box input {
+    width: 90%;
+    height: 80%;
+    padding-top: 20px;
+    color: white;
+    font-size: 1.3em;
+    font-weight: bold;
+    background-color: transparent;
+    border: none;
+    border-bottom: 3px solid grey;
+}
+
+
+#legend-box input:focus {
+    outline: none;
+}
+
+/* CSS */
+
 #wrapper {
     display: grid;
     grid-template-columns: repeat(13, 72px);
-    width: 100%;
-    padding: 20px 100px;
+    width: 75%;
     gap: 2px;
 }
 
 #wrapper2 {
     display: grid;
     grid-template-columns: repeat(5, 72px);
-    width: 100%;
-    padding: 20px 100px;
+    width: 75%;
+    margin-top: 40px;
     gap: 2px;
 }
 
@@ -65,34 +142,4 @@ body {
     text-align: center;
     font-size: 2em;
     z-index: 100;
-}
-
-#header {
-    height: 50px;
-    background-color: lightblue;
-}
-
-#header input {
-	clip-path: polygon(
-        5% 0,
-        95% 0,
-        100% 100%,
-        0 100%
-    )
-}
-
-#header input{
-    width: 30%;
-    height: 51px;
-    margin-left: 200px;
-    padding: 2px 45px;
-    background-color: black;
-    font-weight: bold;
-    border: none;
-    color: white;
-    font-size: 2em;
-}
-
-#header input:focus {
-    outline: none;
 }
